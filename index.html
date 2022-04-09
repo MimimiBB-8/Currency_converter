@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <script src="/js/app.js"></script>
+    <header>
+      <div class="wrapper__header"></div>
+    </header>
+    <main>
+      <div class="wrapper__main">
+        <form action="">
+          <div class="wrapper__data">
+            <input type="date" min="2021-04-10" />
+            <p id="choosedData">Data for <span></span></p>
+          </div>
+          <div class="converter">
+            <div class="converter__from">
+              <div class="radio from">
+                <input
+                  label="BYN"
+                  type="radio"
+                  id="BYN"
+                  name="rgroup1"
+                  value="BYN"
+                  checked
+                  data-value="BYN"
+                />
+                <input
+                  label="USD"
+                  type="radio"
+                  id="USD"
+                  name="rgroup1"
+                  value="USD"
+                />
+                <input
+                  label="EUR"
+                  type="radio"
+                  id="EUR"
+                  name="rgroup1"
+                  value="EUR"
+                />
+                <input
+                  label="RUB"
+                  type="radio"
+                  id="RUB"
+                  name="rgroup1"
+                  value="RUB"
+                />
+              </div>
+              <div class="course">
+                <input
+                  type="text"
+                  name="curency"
+                  id="curency_from"
+                  class="inputValue"
+                  value="1"
+                />
+                <p >
+                  1 <span class="value_from">BYN</span> = <span class="value_to"> 1 USD</span>
+                </p>
+              </div>
+            </div>
+            <div class="converter__to">
+                <div class="radio to">
+                  <input
+                    label="BYN"
+                    type="radio"
+                    id="BYN"
+                    name="rgroup2"
+                    value="BYN"
+                  />
+                  <input
+                    label="USD"
+                    type="radio"
+                    id="USD"
+                    name="rgroup2"
+                    value="USD"
+                    checked
+                  />
+                  <input
+                    label="EUR"
+                    type="radio"
+                    id="EUR"
+                    name="rgroup2"
+                    value="EUR"
+                  />
+                  <input
+                    label="RUB"
+                    type="radio"
+                    id="RUB"
+                    name="rgroup2"
+                    value="RUB"
+                  />
+                </div>
+                <div class="course">
+                  <input type="text" name="curency" 
+                  id="curency_to" class="inputValue" />
+                  <p>
+                    1 <span class="value_from">USD</span> = <span class="value_to"> 1 BYN</span>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th >Currency</th>
+                    <th >Key</th>
+                    <th >Well</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 Dollar USA</td>
+                    <td>USD</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 1 Euro</td>
+                    <td>EUR</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 100 Russian ruble</td>
+                    <td>RUB</td>
+                    <td></td>
+                </tr>
+                <tr class="add">
+                    <td> 1 Pound Sterling</td>
+                    <td>GBP</td>
+                    <td></td>
+                </tr>
+                <tr class="add">
+                    <td> 10  Yuan China</td>
+                    <td>CNY</td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p class="showMore">Show more</p>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper__footer"></div>
+    </footer>
+  </body>
+</html>
